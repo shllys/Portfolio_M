@@ -1,0 +1,97 @@
+.design {
+  background-image: url(./img/fondoSecund.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .box_PortGa {
+    width: 75%;
+    height: 75%;
+    border-radius: 10px;
+    margin: 15px;
+    z-index: 0;
+
+    .portDesign {
+      position: relative;
+      backdrop-filter: blur(3px);
+      background-color: var(--background-blur);
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      border: 2px solid var(--color-border);
+      padding: 20px 30px;
+      cursor: pointer;
+      box-shadow: var(--shadow-box);
+      z-index: 1;
+
+      .description {
+        position: absolute;
+        top: 2rem;
+        left: 8%;
+        border: 2px solid var(--color-border);
+        border-radius: 10px 40px 40px 10px;
+        background-color: var(--background-color);
+        width: 44%;
+        padding: 7px 15px;
+        font-size: 1.2rem;
+
+        span {
+          margin: 10px;
+          font-size: 1.5rem;
+        }
+      }
+
+      .gallery {
+        position: absolute;
+        top: 14rem;
+        left: 9%;
+        display: grid;
+        width: 50rem;
+        grid-template-columns: auto auto auto;
+        gap: 1rem;
+        z-index: 1;
+
+        .img {
+          width: 16rem;
+          height: 10rem;
+          border-radius: 15px;
+          display: block;
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+          cursor: pointer;
+        }
+
+        .more {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          position: relative;
+
+          .bx {
+            font-size: 4rem;
+          }
+
+          .titles {
+            padding: 2px 3rem;
+            border-radius: 15px;
+            top: 7rem;
+            left: 3.5rem;
+          }
+        }
+      }
+    }
+    &::after {
+      background: url(./img/fondoSecund.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}

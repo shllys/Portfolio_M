@@ -1,0 +1,185 @@
+.contact {
+  background-image: url(./img/fondoSecund.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .box_contactM {
+    .contact-me {
+      backdrop-filter: blur(3px);
+      background-color: var(--background-blur);
+      border-radius: 20px;
+      border: 2px solid var(--color-border);
+      padding: 10px 30px;
+      width: 45rem;
+      height: 22rem;
+      cursor: pointer;
+      box-shadow: var(--shadow-box);
+      display: flex;
+      flex-direction: column;
+
+      .form {
+        position: relative;
+        top: 0rem;
+        left: 1rem;
+        width: 39rem;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .datos {
+          display: grid;
+          grid-template-columns: 1fr;
+          margin-bottom: 10px;
+
+          input {
+            width: 179px;
+            height: 24px;
+            border: 2px solid var(--color-border);
+            margin: 15px 0;
+            border-radius: 15px;
+            background: var(--background-blur);
+            padding: 15px 5px;
+            font-family: sans-serif;
+
+
+            &:focus {
+              outline: none;
+            }
+            &::placeholder {
+              color: var(--color-text);
+              text-align: center;
+              font-family: var(--family-title);
+              font-size: 1.1rem;
+            }
+          }
+          input[type="number"]::-webkit-inner-spin-button,
+          input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+        }
+        .divide {
+          width: 2px;
+          height: 153px;
+          background-color: var(--color-border);
+          margin: 0 70px;
+        }
+        .message {
+          width: 300px;
+          height: 85px;
+          margin-top: 15px;
+          background-color: var(--background-blur);
+          border: 2px solid var(--color-border);
+          border-radius: 10px 10px 10px 20px;
+          resize: none;
+          padding: 10px 5px;
+          padding-left: 8px;
+          font-family: sans-serif;
+
+          &:focus {
+            outline: none;
+          }
+          &::placeholder {
+            color: var(--color-text);
+            text-align: center;
+            font-family: var(--family-title);
+            font-size: 1.1rem;
+          }
+          &::-webkit-scrollbar {
+            background-color: var(--color-text);
+            border-radius: 10px 80px 80px 10px;
+            width: 5px;
+            cursor: pointer;
+          }
+        }
+        .btn {
+          cursor: pointer;
+          width: 150px;
+          height: 30px;
+          border: 2px solid var(--color-border);
+          margin: 15px 0;
+          border-radius: 15px;
+          background-color: var(--background-blur);
+          padding: 3px 5px;
+          color: var(--color-text);
+          position: absolute;
+          bottom: 5px;
+          right: 0rem;
+          font-family: var(--family-title);
+          font-weight: 600;
+        }
+      }
+
+      .contact-icons {
+        position: absolute;
+        bottom: 10px;
+        left: 20rem;
+        font-size: 3rem;
+      }
+    }
+    &::after {
+      background: url(./img/fondoSecund.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  .chat-burble {
+    background-color: var(--background-blur);
+    border-radius: 50%;
+    border: var(--color-border) 2px solid;
+    width: 277px;
+    height: 128px;
+    position: relative;
+    margin: 3rem 0;
+
+    .burble {
+      width: 189px;
+      height: 189px;
+      position: absolute;
+      left: 40px;
+      top: -30px;
+    }
+  }
+
+  .box_name {
+    .hecho-por {
+      backdrop-filter: blur(3px);
+      background-color: var(--background-blur);
+      border-radius: 20px;
+      border: 2px solid var(--color-border);
+      padding: 10px 30px;
+      width: 940px;
+      height: 5rem;
+      cursor: pointer;
+      box-shadow: var(--shadow-box);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .name {
+        font-family: var(--family-text);
+        color: var(--color-border);
+        font-weight: 200;
+      }
+      .fecha {
+        font-family: var(--family-title);
+        color: var(--color-text);
+        font-size: 1.2rem;
+      }
+    }
+    &::after {
+      background: url(./img/fondoSecund.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
