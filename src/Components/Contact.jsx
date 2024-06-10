@@ -8,7 +8,7 @@ function Contact() {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -27,18 +27,18 @@ function Contact() {
     emailjs
       .sendForm(servicerId, templeteId, templeParems, publicKey)
       .then((response) => {
-          console.log('HECHO!', response);
-          setName('');
-          setEmail('');
-          setPhone('');
-          setMessage('');
-        })
-        .catch ((error) => {
+        console.log('HECHO!', response);
+        setName('');
+        setEmail('');
+        setPhone('');
+        setMessage('');
+      })
+      .catch((error) => {
         console.error('Error sending email', error)
       });
   }
 
-  
+
 
   return (
     <div className="contact">
@@ -51,8 +51,8 @@ function Contact() {
           <Menu />
 
           <form
-          className="form"
-          onSubmit={handleSubmit}
+            className="form"
+            onSubmit={handleSubmit}
           >
             <div className="datos">
               <input
@@ -94,9 +94,15 @@ function Contact() {
           </form>
 
           <div className="contact-icons">
-            <i className="bx bxl-instagram"></i>
-            <i className="bx bxl-github"></i>
-            <i className="bx bxl-linkedin-square"></i>
+            <a href="https://github.com/shllys">
+              <i class="fi fi-brands-github"></i>
+            </a>
+            <a href="https://www.instagram.com/shellys.axel/">
+              <i class="fi fi-brands-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mishelis-martinez-40ba11260/">
+              <i class="fi fi-brands-linkedin"></i>
+            </a>
           </div>
         </div>
       </div>

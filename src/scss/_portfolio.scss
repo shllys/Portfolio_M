@@ -10,6 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
 
   .box_PortGa {
     width: 75%;
@@ -50,12 +51,13 @@
 
       .gallery {
         position: absolute;
-        top: 14rem;
-        left: 9%;
+        top: 10.5rem;
+        left: 17%;
         display: grid;
         width: 50rem;
         grid-template-columns: auto auto auto;
-        gap: 1rem;
+        column-gap: 2rem;
+        row-gap: 1.5rem;
         z-index: 1;
 
         .img {
@@ -65,6 +67,12 @@
           display: block;
           box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
           cursor: pointer;
+          transition: all .4s ease-out;
+
+          &:hover {
+            box-shadow: 0 .7em .5em -0.4em var(--luz-border);
+            transform: translateY(-0.25em);
+          }
         }
 
         .more {
@@ -74,8 +82,14 @@
           cursor: pointer;
           position: relative;
 
-          .bx {
+          .fi {
             font-size: 4rem;
+            margin-bottom: 15px;
+            transition: all .4s ease-out;
+
+            &:hover {
+              color: var(--luz-border);
+            }
           }
 
           .titles {
@@ -83,10 +97,17 @@
             border-radius: 15px;
             top: 7rem;
             left: 3.5rem;
+            transition: all .4s ease-out;
+
+            &:hover {
+              background: var(--luz-border);
+              color: #000;
+            }
           }
         }
       }
     }
+
     &::after {
       background: url(./img/fondoSecund.jpg);
       background-attachment: fixed;

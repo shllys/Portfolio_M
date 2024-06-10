@@ -120,8 +120,12 @@
       .contact-icons {
         position: absolute;
         bottom: 10px;
-        left: 20rem;
+        left: 17rem;
         font-size: 3rem;
+
+        .fi {
+          margin: 10px;
+        }
       }
     }
     &::after {
